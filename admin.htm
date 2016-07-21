@@ -1,0 +1,38 @@
+<!– file booking.htm -->
+<HTML XMLns="http://www.w3.org/1999/xHTML"> 
+  <head> 
+    <title>Cabs</title> 
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="adminajax.js"> </script>
+  </head> 
+  <body>
+
+        <div id="mainform">
+            <div class="innerdiv">
+                <h2>CabsOnline</h2>
+                <!-- Required div starts here -->
+                <form>
+                    <h3 style="color:white">Enter Details</h3>
+                    <table>
+                        <tr>
+                            
+                            <td><input type='text' name='searchfield' id='search' placeholder="Search Booking Request" ></td>
+                            <td><div id='searchfield'></div></td>
+                        </tr>
+                        <tr>
+                        
+
+                    </table>
+                    <input type='button' name="button" onclick="checksearch('display.php','divId', search.value)" value="Show pickup requests">
+                    <input type='button' name="button" onclick="checksearch('assignreference.php','divId', search.value)" value="Assign">
+                </form>
+                
+                <div id="divId"> 
+	    <p></p>  
+</div>
+                
+            </div>            
+        </div>
+    </body>
+</HTML>
+

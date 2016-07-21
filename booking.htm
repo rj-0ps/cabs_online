@@ -1,0 +1,233 @@
+<!– file booking.htm -->
+<HTML XMLns="http://www.w3.org/1999/xHTML"> 
+  <head> 
+    <title>Cabs</title> 
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="bookingajax.js"> </script>
+  </head> 
+  <body>
+      
+      <div class="cd-fixed-bg cd-bg-1">
+			
+
+        <div id="mainform">
+            <div class="innerdiv">
+                <div class="logo">
+                    <img src="line.png" alt="#" style="width:10%;height:10%;">
+                    
+                    <img src="line.png" alt="#" style="width:10%;height:10%;">
+                </div>
+                <!-- Required div starts here -->
+                <form class="enterform">
+                    <table class="box">
+                        <tr>
+                            
+                            <td><input type='text' name='namefield' id='name' placeholder="Name" ></td>
+                            <td><div style="color:white; background-color: blue; border-radius: 5px; text-align: center" id='namefield'></div></td>
+                        </tr>
+                        <tr>
+                            
+                            <td><input type='text' name='phonefield' id='phone' placeholder="Phone" ></td>
+                            <td><div style="color:white; background-color: blue; border-radius: 5px; text-align: center" id='phonefield'></div></td>
+                        </tr>
+                        <tr>
+                            
+                            <td><input type='text' name='unitfield' id='unit' placeholder="Unit Number (Optional)" ></td>
+                            <td><div style="color:white; background-color: blue; border-radius: 5px; text-align: center" id='unitfield'></div></td>
+                        </tr>
+                        <tr>
+                            
+                            <td><input type='text' name='numberfield' id='number' placeholder="Street Number" ></td>
+                            <td><div style="color:white; background-color: blue; border-radius: 5px; text-align: center" id='numberfield'></div></td>
+                        </tr>
+                        <tr>
+                          
+                            <td><input type='text' name='streetfield' id='street' placeholder="Street Address" ></td>
+                            <td><div style="color:white; background-color: blue; border-radius: 5px; text-align: center" id='streetfield'></div></td>
+                        </tr>
+                        <tr>
+                         
+                            <td><input type='text' name='suburbfield' id='suburb' placeholder="Suburb" ></td>
+                            <td><div style="color:white; background-color: blue; border-radius: 5px; text-align: center" id='suburbfield'></div></td>
+                        </tr>
+                        <tr>
+                            
+                            <td><input type='text' name='destfield' id='dest' placeholder="Destination Address" ></td>
+                            <td><div style="color:white; background-color: blue; border-radius: 5px; text-align: center" id='destfield'></div></td>
+                        </tr>
+                        <tr><p><br> </p></tr>
+                        
+                        <tr>
+                            
+                            <td>Date: </select>
+                                <select id = day name="dayfield">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                </select>
+                        
+                                <select id = month name="monthfield">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                </select>
+                        
+                                <select id = year name="yearfield">
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                </select>
+                            </td>
+                            <td><div style="color:white; background-color: blue; border-radius: 5px; text-align: center" id='datefield'></div></td>
+                        </tr>
+                        <tr>
+                            
+                            
+                            <td>Time:
+                                <select id = hour name="hourfield">
+                                <option value="00">00</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="01">03</option>
+                                <option value="02">04</option>
+                                <option value="01">05</option>
+                                <option value="02">06</option>
+                                <option value="01">07</option>
+                                <option value="02">08</option>
+                                <option value="01">09</option>
+                                <option value="02">10</option>
+                                <option value="01">11</option>
+                                <option value="02">12</option>
+                                <option value="01">13</option>
+                                <option value="02">14</option>
+                                <option value="01">15</option>
+                                <option value="02">16</option>
+                                <option value="01">17</option>
+                                <option value="02">18</option>
+                                <option value="01">19</option>
+                                <option value="02">20</option>
+                                <option value="01">21</option>
+                                <option value="02">22</option>
+                                <option value="01">23</option>
+                                
+                                </select>
+                                <select id = minute name="minutefield">
+                                <option value="00">00</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="01">03</option>
+                                <option value="02">04</option>
+                                <option value="01">05</option>
+                                <option value="02">06</option>
+                                <option value="01">07</option>
+                                <option value="02">08</option>
+                                <option value="01">09</option>
+                                <option value="02">10</option>
+                                <option value="01">11</option>
+                                <option value="02">12</option>
+                                <option value="01">13</option>
+                                <option value="02">14</option>
+                                <option value="01">15</option>
+                                <option value="02">16</option>
+                                <option value="01">17</option>
+                                <option value="02">18</option>
+                                <option value="01">19</option>
+                                <option value="02">20</option>
+                                <option value="01">21</option>
+                                <option value="02">22</option>
+                                <option value="01">23</option>
+                                <option value="01">24</option>
+                                <option value="02">25</option>
+                                <option value="01">26</option>
+                                <option value="02">27</option>
+                                <option value="01">28</option>
+                                <option value="02">29</option>
+                                <option value="01">30</option>
+                                <option value="02">31</option>
+                                <option value="01">32</option>
+                                <option value="02">33</option>
+                                <option value="01">34</option>
+                                <option value="02">35</option>
+                                <option value="01">36</option>
+                                <option value="02">37</option>
+                                <option value="01">38</option>
+                                <option value="02">39</option>
+                                <option value="01">40</option>
+                                <option value="02">41</option>
+                                <option value="01">42</option>
+                                <option value="02">43</option>
+                                <option value="01">44</option>
+                                <option value="02">45</option>
+                                <option value="01">46</option>
+                                <option value="02">47</option>
+                                <option value="01">48</option>
+                                <option value="02">49</option>
+                                <option value="01">50</option>
+                                <option value="02">51</option>
+                                <option value="01">52</option>
+                                <option value="02">53</option>
+                                <option value="01">54</option>
+                                <option value="02">55</option>
+                                <option value="01">56</option>
+                                <option value="02">57</option>
+                                <option value="01">58</option>
+                                <option value="02">59</option>
+                                
+                                </select>
+                    
+                    
+                    </td>
+                            <td><div style="color:white; background-color: blue; border-radius: 5px; text-align: center" id='timefield'></div></td>
+                            <td></td> <div style="background-color:green; color:white; border-radius:" id="divId"> 
+	                           <p></p>  
+                            </div>
+                        </tr>
+                    <tr>
+                    <td><input type='button' name="button" onclick="checkform('data.php','divId', namefield.value, phonefield.value, unitfield.value, numberfield.value, streetfield.value, suburbfield.value, destfield.value, dayfield.value, monthfield.value, yearfield.value, hourfield.value, minutefield.value)" value="Go"> <a href="admin.htm">Admin Page</a></td>
+                </table></tr>
+                </form>
+                
+                
+                
+            </div>            
+        </div>
+    </div>
+    </body>
+</HTML>
+
